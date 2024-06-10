@@ -149,13 +149,13 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </li>
                 <li class="times">
                     <h4>Opening hours</h4>
-                    <p>Monday&nbsp; &nbsp; &nbsp; &nbsp;16:00 – 23:00<br>
-                        Tuesday&nbsp; &nbsp; &nbsp; 16:00 – 23:00<br>
-                        Wednesday 16:00 – 23:00<br>
-                        Thursday&nbsp; &nbsp; &nbsp;16:00 – 00:00<br>
-                        Friday&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 16:00 – 01:00<br>
-                        Saturday&nbsp; &nbsp; &nbsp; 13:00 – 01:00<br>
-                        Sunday&nbsp; &nbsp; &nbsp; &nbsp; 13:00 – 23:00</p>
+                    <p>Monday&nbsp; &nbsp; &nbsp; &nbsp;11:00 – 01:00<br>
+                        Tuesday&nbsp; &nbsp; &nbsp; 11:00 – 01:00<br>
+                        Wednesday 11:00 – 01:00<br>
+                        Thursday&nbsp; &nbsp; &nbsp;11:00 – 01:00<br>
+                        Friday&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 11:00 – 01:00<br>
+                        Saturday&nbsp; &nbsp; &nbsp; 11:00 – 01:00<br>
+                        Sunday&nbsp; &nbsp; &nbsp; &nbsp; 11:00 – 01:00</p>
                     <section class="agenda-soon"></section>
                     <section class="info-blocks">
                         <div class="container"></div>

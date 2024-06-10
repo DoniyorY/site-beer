@@ -139,26 +139,26 @@ $lang = Yii::$app->language;
     </div>
 </section>
 <section class="map-widget">
-    <iframe src="https://yandex.uz/map-widget/v1/?ll=67.057123%2C39.659738&mode=poi&poi%5Bpoint%5D=67.056673%2C39.660460&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D75198700165&z=17.87"
-            frameborder="1" allowfullscreen="true" style="width: 100%; height: 600px"></iframe>
+    <iframe src="https://yandex.uz/map-widget/v1/?ll=67.057832%2C39.660027&mode=poi&poi%5Bpoint%5D=67.056461%2C39.660513&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D72610729384&z=17.73"
+            width="560" height="400" frameborder="1" allowfullscreen="true" style="width: 100%; height: 600px"></iframe>
 </section>
 <section class="products">
     <div class="container">
-        <a class="block" href="<?=\yii\helpers\Url::to(['menu/index'])?>" target="_self">
+        <a class="block" href="<?= \yii\helpers\Url::to(['menu/index']) ?>" target="_self">
             <img src="<?= "$baseUrl/images/our-menu-img.png" ?>" alt="">
             <div class="inner">
                 <h2>Our Menu</h2>
                 <p>Find Out more about our menu</p>
             </div>
         </a>
-        <a class="block" href="<?=\yii\helpers\Url::to(['site/events'])?>" target="_self">
+        <a class="block" href="<?= \yii\helpers\Url::to(['site/events']) ?>" target="_self">
             <img src="<?= "$baseUrl/images/events-img.png" ?>" alt="restaurant">
             <div class="inner">
                 <h2>Events</h2>
                 <p>Hold an event with us</p>
             </div>
         </a>
-        <a class="block" href="<?=\yii\helpers\Url::to(['site/beers'])?>" target="_self">
+        <a class="block" href="<?= \yii\helpers\Url::to(['site/beers']) ?>" target="_self">
             <img src="<?= "$baseUrl/images/beer-img.png" ?>" alt="Beer pul">
             <div class="inner">
                 <h2>Beers</h2>
@@ -167,6 +167,3 @@ $lang = Yii::$app->language;
         </a>
     </div>
 </section>
-
-
-
