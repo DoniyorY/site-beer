@@ -1,0 +1,339 @@
+div {
+    width: 100%;
+}
+
+.yellow {
+    color: #CD8A33 !important;
+}
+
+section.b {
+    position: relative;
+    background-color: #000000;
+}
+
+div.banner-main {
+    width: 100%;
+    height: 100vh !important;
+    background-size: cover; /* Обеспечивает, что изображение охватывает весь баннер */
+    background-repeat: no-repeat; /* Избегает повторения изображения */
+    opacity: .9;
+}
+
+div.heading {
+    position: absolute;
+    top: 65%;
+}
+
+section.about-main {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    margin-bottom: 25px;
+}
+
+.about-title {
+    margin-bottom: 15px;
+}
+
+.about-title h2 {
+    font-size: 3.3rem;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.about-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 320px;
+}
+
+
+.border_bottom hr {
+    border-top-width: 2px;
+    border-color: #CD8A33;
+    border-top-style: solid; /* Указываем стиль границы */
+}
+
+.event-cards {
+    margin-top: 15px;
+    color: #FDFEFF !important;
+    padding: 0 40px 0 40px;
+}
+
+.event-card-jazz {
+    display: flex;
+    background: #27373C;
+    flex-direction: row;
+}
+
+.event-card-jazz .card-image {
+    width: 380px;
+}
+
+.event-card-jazz img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-content * {
+    color: #FDFFFF !important;
+}
+
+.card-content {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.card-content .event-card-content {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.restaurant-banner {
+    width: 100%;
+    background-color: #CD8A33;
+    display: flex;
+}
+
+.restaurant-image {
+    width: 699px;
+    height: 668px;
+}
+
+.restaurant-content {
+    padding: 100px;
+}
+
+.c-title {
+    color: #27373C;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.c-content {
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+section.products {
+    margin-top: 50px !important;
+}
+
+section.products .inner * {
+    color: #FFFFFF !important;
+}
+
+div.breadcrumbs {
+    height: 600px;
+    position: relative;
+    display: block;
+    background: #000000;
+}
+
+.breadcrumbs-image {
+    background-image: url(/images/beer-breadcrumbs.png);
+    opacity: .6;
+    height: 600px;
+}
+
+div.breadcrumbs-content {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    max-width: 850px;
+}
+
+.breadcrumbs-content h1 {
+    color: white;
+}
+
+.breadcrumbs-content h2 {
+    color: #FFA025;
+}
+
+section.main-beers {
+    margin-top: 50px;
+}
+
+section.main-beers .event-card-jazz img {
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.cards-container {
+    margin-bottom: 40px;
+}
+
+section.pre-footer {
+    position: relative;
+    background: #000000;
+}
+
+section.pre-footer h2 {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    color: white;
+}
+
+.pre-footer img {
+    opacity: .6;
+}
+
+section.events-main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.event-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-left {
+    max-width: 350px;
+}
+
+.item-left img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.item-right {
+    padding: 30px 100px 0 30px;
+}
+
+.item-content {
+    margin-top: 40px;
+}
+
+.event-border {
+    border: 2px solid black;
+}
+
+.left-bordered-event {
+    z-index: 1;
+}
+
+.right-bordered-event {
+    position: absolute;
+    border: 3px solid black;
+    right: 10px;
+    top: 25px;
+    width: 1300px;
+    height: 500px;
+    z-index: 0;
+}
+
+.right-bordered-event .title {
+    padding: 100px 200px 0 300px;
+}
+
+.background-yellow {
+    background-color: #CD8A33;
+    height: 100px;
+    width: 100%;
+}
+
+.event-background-image {
+    background: #000000;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.back-image {
+    background-image: url(/images/event-back-image.png);
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+}
+
+.back-content {
+    position: absolute;
+    top: 40%;
+    width: 1200px;
+    left: 18%;
+}
+
+.event-content {
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 200px;
+
+}
+.event-content .title{
+    margin-bottom: 50px;
+}
+.event-content p {
+    font-size: 35px;
+    line-height: 50px;
+}
+.event-content .event-item{
+
+}
+.event-content .event-item .item-right {
+    padding: 5px 100px 0 30px;
+}
+
+.event-content .event-item .item-left {
+    max-width: 800px;
+    object-fit: cover;
+
+}
+
+@media (max-width: 568px) {
+    .about-title h2 {
+        line-height: 35px;
+    }
+
+    .event-card-jazz {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .event-card-jazz img {
+        width: 96%;
+        object-fit: cover;
+    }
+
+    .event-cards {
+        padding: 0;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .restaurant-banner {
+        flex-direction: column;
+    }
+
+    .restaurant-image {
+        width: 100%;
+        height: 370px;
+    }
+
+    .restaurant-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .restaurant-content {
+        padding: 20px;
+    }
+
+    .restaurant-content .c-title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+}
