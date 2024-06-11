@@ -25,12 +25,16 @@ class AppAsset extends AssetBundle
         'css/styles.css',
         'css/swiper.css',
         'css/style.css',
-        'css/extra.css'
+        'css/extra.css',
+        'dist/assets/owl.carousel.css',
+        'dist/assets/owl.theme.default.css',
     ];
     public $js = [
         'js/app.js',
         'js/front-widget.js',
         'js/main.js',
+        'dist/owl.carousel.js',
+        'js/owl-config.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

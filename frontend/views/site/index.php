@@ -43,15 +43,27 @@ $lang = Yii::$app->language;
             </div>
         </div>
         <div class="about-image">
-            <div class="row">
-                <div class="col-md-4 col-12 mt-3 mt-md-0">
+            <div class="owl-carousel owl-theme">
+                <div class="item mt-3 mt-md-0">
                     <img src="<?= "$baseUrl/images/about-image-1.png" ?>" alt="about-image">
                 </div>
-                <div class="col-md-4 col-12 mt-3 mt-md-0">
+                <div class="item mt-3 mt-md-0">
                     <img src="<?= "$baseUrl/images/about-image-2.png" ?>" alt="about-image">
                 </div>
-                <div class="col-md-4 col-12 mt-3 mt-md-0">
+                <div class="item mt-3 mt-md-0">
                     <img src="<?= "$baseUrl/images/about-image-3.png" ?>" alt="about-image">
+                </div>
+                <div class="item mt-3 mt-md-0">
+                    <img src="<?= "$baseUrl/images/about-image-4.png" ?>" alt="about-image">
+                </div>
+                <div class="item mt-3 mt-md-0">
+                    <img src="<?= "$baseUrl/images/about-image-5.png" ?>" alt="about-image">
+                </div>
+                <div class="item mt-3 mt-md-0">
+                    <img src="<?= "$baseUrl/images/about-image-6.png" ?>" alt="about-image">
+                </div>
+                <div class="item mt-3 mt-md-0">
+                    <img src="<?= "$baseUrl/images/about-image-7.png" ?>" alt="about-image">
                 </div>
             </div>
         </div>
