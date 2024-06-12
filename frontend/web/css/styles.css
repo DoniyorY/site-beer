@@ -1,3 +1,5 @@
+
+
 html {
     box-sizing: border-box
 }
@@ -5,9 +7,11 @@ html {
 *, *::after, *::before {
     box-sizing: inherit
 }
-p,strong,h1,h2,h3,h4,h5,h6,span {
+
+p, strong, h1, h2, h3, h4, h5, h6, span {
     color: #27373C;
 }
+
 .alignleft {
     display: inline;
     float: left
@@ -391,13 +395,13 @@ html {
 }
 
 body {
+    font-family: 'Sofia Sans', sans-serif !important;
     padding: 0 0 0 0;
     background: #FFF;
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     line-height: 2.9rem;
-    font-family: "sofia-pro", sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     color: #8b7158;
     -webkit-font-smoothing: antialiased
 }
@@ -412,6 +416,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Academy', sans-serif !important;
     margin: 0 0 25px 0;
     font-size: 2.5rem;
     line-height: 2.9rem;
@@ -2853,7 +2858,7 @@ section#form .contain iframe {
 }
 
 footer {
-  /*  overflow: hidden;*/
+    /*  overflow: hidden;*/
     background: #000;
     padding: 75px 0 0 0
 }

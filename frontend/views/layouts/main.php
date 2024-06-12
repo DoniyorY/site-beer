@@ -23,6 +23,10 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
     <title><?= Html::encode($this->title) ?></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+          rel="stylesheet">
     <?php $this->head() ?>
 </head>
 <body class="d-flex flex-column h-100">
@@ -164,9 +168,8 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             </ul>
         </nav>
     </div>
-    <p class="developed-by">Ontwerp en realisatie: <a href="#" alt="Studio Tempel - digital design"
-                                                      title="Studio Tempel - digital design" target="_blank">Studio
-            Tempel</a>
+    <p class="developed-by">Powered by:
+        <a href="https://silkroad-samarkand.com" title="SilkRoad-Samarkand" target="_blank">SilkRoad Samarkand</a>
     </p>
 </footer>
 

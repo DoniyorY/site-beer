@@ -22,6 +22,7 @@ class AppAsset extends AssetBundle
     public $css = [
         //'css/site.css',
         'css/normalize.css',
+        'fonts/font.css',
         'css/styles.css',
         'css/swiper.css',
         'css/style.css',

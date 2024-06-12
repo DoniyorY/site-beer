@@ -1,0 +1,17 @@
+@font-face{
+    font-family: 'Academy';
+    src: url('Academy_Regular.eot'); /* IE9 Compatibility Modes */
+    src: url('Academy_Regular_Italic.eot'); /* IE9 Compatibility Modes */
+    src: url('Academy_Bold.eot'); /* IE9 Compatibility Modes */
+    src: url('Academy_Bold_Italic.eot'); /* IE9 Compatibility Modes */
+    src: url('Academy_Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('Academy_Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('Academy_Regular_Italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('Academy_Bold.woff') format('woff'), /* Super Modern Browsers */
+    url('Academy_Bold_Italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('Academy_Regular.woff') format('woff'), /* Modern Browsers */
+    url('Academy_Regular_Italic.woff') format('woff'), /* Modern Browsers */
+    url('Academy_Regular.ttf') format('truetype');/* Safari, Android, iOS */
+    url('Academy_Regular_Italic.ttf') format('truetype');/* Safari, Android, iOS */
+
+}
