@@ -10,7 +10,7 @@ use yii\helpers\Html;
     <div style="background-image: url('<?= "$baseUrl/images/menu-breadcrumbs.png" ?>'); height: 60vh; opacity: .6"></div>
     <div class="title">
         <h1><?= $this->title ?></h1>
-        <h3><span class="yellow">A Culinary Journey</span> with Craft Brews</h3>
+        <h3 style="color: white;"><span class="yellow">A Culinary Journey</span> with Craft Brews</h3>
     </div>
 </section>
 <section class="main-menu">
