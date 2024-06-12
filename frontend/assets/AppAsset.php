@@ -24,16 +24,18 @@ class AppAsset extends AssetBundle
         'css/normalize.css',
         'fonts/font.css',
         'css/styles.css',
-        'css/swiper.css',
-        'css/style.css',
+        //'css/swiper.css',
+        //'css/style.css',
         'css/extra.css',
         'dist/assets/owl.carousel.css',
         'dist/assets/owl.theme.default.css',
     ];
     public $js = [
-        'js/app.js',
-        'js/front-widget.js',
-        'js/main.js',
+        'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js',
+        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
+        //'js/app.js',
+        //'js/front-widget.js',
+        //'js/main.js',
         'dist/owl.carousel.js',
         'js/owl-config.js',
     ];

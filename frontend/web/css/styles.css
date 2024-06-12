@@ -11,6 +11,7 @@ html {
 p, strong, h1, h2, h3, h4, h5, h6, span {
     color: #27373C;
 }
+/*
 
 .alignleft {
     display: inline;
@@ -315,80 +316,7 @@ p, strong, h1, h2, h3, h4, h5, h6, span {
 .gform-theme-datepicker table td a, .gform-theme-datepicker table th a {
     color: #000
 }
-
-#newsletter-signup {
-    margin-bottom: 81px;
-    padding-bottom: 72px;
-    border-bottom: 1px solid #565655
-}
-
-#newsletter-signup .mc4wp-form {
-    display: block;
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: center
-}
-
-#newsletter-signup .mc4wp-form h3, #newsletter-signup .mc4wp-form h4, #newsletter-signup .mc4wp-form h5 {
-    color: #fff;
-    font-weight: 600;
-    width: 500px;
-    max-width: 100%;
-    margin: 0 auto 25px auto
-}
-
-#newsletter-signup .mc4wp-form input[type="text"], #newsletter-signup .mc4wp-form input[type="email"] {
-    border: 0;
-    border-radius: 5px;
-    background: #FFB200;
-    color: #3A3A3A;
-    height: 60px;
-    line-height: 6rem;
-    font-size: 2rem;
-    padding: 0 15px;
-    display: inline-block;
-    margin: 0 6px;
-    text-align: center
-}
-
-#newsletter-signup .mc4wp-form input[type="text"]:focus, #newsletter-signup .mc4wp-form input[type="email"]:focus {
-    outline: none
-}
-
-#newsletter-signup .mc4wp-form input[type="email"] {
-    background: #fff
-}
-
-#newsletter-signup .mc4wp-form input[type="submit"] {
-    display: block;
-    float: none;
-    clear: both;
-    margin: 20px auto 0;
-    background: none;
-    border: 0;
-    color: #FFB200;
-    font-size: 1.8rem;
-    font-family: "sofia-pro", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-    text-transform: none;
-    transition: color 0.3s ease
-}
-
-#newsletter-signup .mc4wp-form input[type="submit"]:hover {
-    color: #fff
-}
-
-#newsletter-signup .mc4wp-form.mc4wp-form-success .mc4wp-form-fields {
-    display: none
-}
-
-#newsletter-signup .mc4wp-form.mc4wp-form-success .mc4wp-response {
-    color: #FFB200;
-    margin-top: 25px
-}
+*/
 
 html {
     font-size: 10px

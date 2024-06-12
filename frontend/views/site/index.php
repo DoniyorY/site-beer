@@ -43,7 +43,7 @@ $lang = Yii::$app->language;
             </div>
         </div>
         <div class="about-image">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-carousel1">
                 <div class="item mt-3 mt-md-0">
                     <img src="<?= "$baseUrl/images/about-image-1.png" ?>" alt="about-image">
                 </div>
