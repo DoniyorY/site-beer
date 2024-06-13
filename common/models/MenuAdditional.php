@@ -13,6 +13,7 @@ use Yii;
  * @property string $name_en
  * @property string $name_uz
  * @property int $price
+ * @property float $weight
  */
 class MenuAdditional extends \yii\db\ActiveRecord
 {
@@ -30,8 +31,9 @@ class MenuAdditional extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['menu_id', 'name_ru', 'name_en', 'name_uz', 'price'], 'required'],
+            [['menu_id', 'name_ru', 'name_en', 'name_uz', 'price', 'weight'], 'required'],
             [['menu_id', 'price'], 'integer'],
+            [['weight'], 'number'],
             [['name_ru', 'name_en', 'name_uz'], 'string', 'max' => 255],
         ];
     }
@@ -48,6 +50,7 @@ class MenuAdditional extends \yii\db\ActiveRecord
             'name_en' => 'Name En',
             'name_uz' => 'Name Uz',
             'price' => 'Price',
+            'weight' => 'Weight',
         ];
     }
 }

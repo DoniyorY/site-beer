@@ -1,5 +1,6 @@
 <?php
 
+use common\models\MenuAdditional;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Url;
@@ -8,7 +9,7 @@ use yii\widgets\DetailView;
 
 /** @var yii\web\View $this */
 /** @var common\models\Menu $model */
-
+$menuAdditional = new MenuAdditional();
 $this->title = $model->title_ru;
 $this->params['breadcrumbs'][] = ['label' => 'Menus', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
@@ -120,6 +121,74 @@ $this->params['breadcrumbs'][] = $this->title;
                                 </td>
                             </tr>
                             <?php $i++; endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+                <div class="col-md-8">
+                    <h2>Addition</h2>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-success" data-bs-toggle="collapse" href="#Additional" role="button"
+                       aria-expanded="false" aria-controls="Additional">
+                        Add Additional
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <div class="collapse" id="Additional">
+                        <div class="card card-body">
+                            <?php $form = ActiveForm::begin(['action' => Url::to(['add-additional', 'menu_id' => $model->id]), 'method' => 'post']); ?>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <?= $form->field($menuAdditional, 'name_ru')->textInput() ?>
+                                </div>
+                                <div class="col-md-4">
+                                    <?= $form->field($menuAdditional, 'name_en')->textInput() ?>
+                                </div>
+                                <div class="col-md-4">
+                                    <?= $form->field($menuAdditional, 'name_uz')->textInput() ?>
+                                </div>
+                                <div class="col-md-6">
+                                    <?= $form->field($menuAdditional, 'weight')->textInput(['type' => 'number']) ?>
+                                </div>
+                                <div class="col-md-6">
+                                    <?= $form->field($menuAdditional, 'price')->textInput(['type' => 'number']) ?>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <button type="submit" class="btn btn-success w-100">
+                                        <i class="bi bi-plus-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <?php ActiveForm::end() ?>
+                        </div>
+                    </div>
+                    <table class="table table-sm table-bordered table-striped text-center">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Weight</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php $i = 1;
+                        foreach ($additional as $a): ?>
+                            <tr>
+                                <td><?= $i++ ?></td>
+                                <td><?= $a->name_ru ?></td>
+                                <td><?= $a->weight ?></td>
+                                <td><?= Yii::$app->formatter->asDecimal($a->price, 0) ?></td>
+                                <td>
+                                    <a href="<?= Url::to(['delete-additional']) ?>" class="btn btn-sm btn-danger"
+                                       data-method="post">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>

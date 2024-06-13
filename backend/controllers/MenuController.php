@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use common\models\Connector;
 use common\models\Menu;
+use common\models\MenuAdditional;
 use common\models\search\MenuSearch;
 use Yii;
 use yii\web\Controller;
@@ -60,9 +61,11 @@ class MenuController extends Controller
     {
         $model = $this->findModel($id);
         $conn = Connector::findAll(['menu_id' => $id]);
+        $additional = MenuAdditional::findAll(['menu_id' => $id]);
         return $this->render('view', [
             'model' => $model,
             'conn' => $conn,
+            'additional' => $additional
         ]);
     }
 
@@ -103,6 +106,19 @@ class MenuController extends Controller
             $model->menu_id = $menu_id;
             $model->allergen_id = $_POST['Connector']['allergen_id'];
             $model->save();
+            return $this->redirect(\Yii::$app->request->referrer);
+        }
+    }
+
+
+    public function actionAddAdditional($menu_id)
+    {
+        $model = new MenuAdditional();
+        if ($this->request->isPost) {
+            if ($model->load(Yii::$app->request->post())) {
+                $model->menu_id = $menu_id;
+                $model->save();
+            }
             return $this->redirect(\Yii::$app->request->referrer);
         }
     }
