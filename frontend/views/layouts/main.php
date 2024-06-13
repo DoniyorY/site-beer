@@ -100,9 +100,8 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 <?= $content ?>
 <footer>
-    <!--            --><!-- -->
     <div class="socialmedia">
-        <a href="#" target="_blank" class="instagram"><img
+        <a href="<?=Yii::$app->params['instagram_link']?>" target="_blank" class="instagram"><img
                     src="<?= "$baseUrl/images/icon-instagram.svg" ?>"
                     alt="Instagram"></a>
         <a href="#" target="_blank" class="facebook"><img
@@ -112,14 +111,14 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     src="<?= "$baseUrl/images/icon-mail.svg" ?>"
                     alt="Email"></a>
     </div>
-    <div class="contain">
+    <div class="contain container">
         <nav class="navigation footer">
             <ul id="menu-footer-eng">
                 <li id="menu-item-4000"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2722 current_page_item menu-item-has-children menu-item-4000 active bierfabriek active">
                     <a href="<?= Yii::$app->homeUrl ?>" aria-current="page">Home</a>
                     <ul class="sub-menu">
-                        <li id="menu-item-6810" class="menu-item our-menu"><a href="<?= Url::to(['site/menu']) ?>">Our
+                        <li id="menu-item-6810" class="menu-item our-menu mt-5"><a href="<?= Url::to(['site/menu']) ?>">Our
                                 Menu</a></li>
                         <li id="menu-item-4003" class="menu-item brewery"><a href="<?= Url::to(['site/events']) ?>">Event</a>
                         </li>
@@ -127,14 +126,21 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                                 Our beers</a></li>
                         <li id="menu-item-3998" class="menu-item tap-tables"><a href="<?= Url::to(['site/contact']) ?>">Contacts</a>
                         </li>
+
+                        <li class="menu-item vote-for-us">
+                            <h3>VOTE FOR US</h3>
+                            <a href="https://untappd.com/Khmelnov" target="_blank">
+                                <img src="<?="$baseUrl/images/khmelnov_logo.png"?>" alt="">
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li id="menu-item-6802"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6802 information">
                     <a href="#">Information</a>
                     <ul class="sub-menu">
-                        <li id="menu-item-6809"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6809 contact-visit">
+                         <li id="menu-item-6809"
+                            class="menu-item mt-5 menu-item-type-post_type menu-item-object-page menu-item-6809 contact-visit">
                             <a href="#">Contact &amp; visit</a></li>
                         <li id="menu-item-6805"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6805 privacy"><a
@@ -144,6 +150,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 <li class="address">
                     <p>
                         <a href="#">Address</a><br>
+                        <br>
                         Rowing canal<br>
                         Samarkand<br>
                         Uzbekistan<br>
@@ -153,7 +160,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </li>
                 <li class="times">
                     <h4>Opening hours</h4>
-                    <p>Monday&nbsp; &nbsp; &nbsp; &nbsp;11:00 – 01:00<br>
+                    <p class="mt-3">Monday&nbsp; &nbsp; &nbsp; &nbsp;11:00 – 01:00<br>
                         Tuesday&nbsp; &nbsp; &nbsp; 11:00 – 01:00<br>
                         Wednesday 11:00 – 01:00<br>
                         Thursday&nbsp; &nbsp; &nbsp;11:00 – 01:00<br>
@@ -167,6 +174,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </li>
             </ul>
         </nav>
+
     </div>
     <p class="developed-by">Powered by:
         <a href="https://silkroad-samarkand.com" title="SilkRoad-Samarkand" target="_blank">SilkRoad Samarkand</a>

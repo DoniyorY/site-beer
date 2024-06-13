@@ -2792,10 +2792,11 @@ footer {
 }
 
 footer .contain {
-    max-width: 900px;
+    /*max-width: 900px;*/
     width: 100%;
-    margin: 60px auto 0;
-    overflow: hidden
+    margin-top: 60px;
+    overflow: hidden;
+
 }
 
 footer a.brand {
@@ -2822,12 +2823,12 @@ footer nav > ul li h4 {
     text-transform: none;
     font-size: 1.7rem;
     line-height: 2.8rem;
-    color: #8b7158;
+    color: white;
     margin: 0
 }
 
 footer nav > ul li p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2.8rem;
     color: #fff
 }
@@ -2851,7 +2852,7 @@ footer nav > ul li.address {
 }
 
 footer nav > ul li.address a {
-    color: #8b7158;
+    /*color: #8b7158;*/
     text-decoration: none;
     font-size: 1.6rem;
     line-height: 2.8rem;
@@ -2863,9 +2864,9 @@ footer nav > ul li.address a:hover {
 }
 
 footer nav > ul li > a {
-    font-size: 1.6rem;
-    line-height: 2.8rem;
-    color: #8b7158
+    font-size: 2rem;
+    line-height: 3.8rem;
+    /*color: #8b7158*/
 }
 
 footer nav > ul li ul {

@@ -362,7 +362,12 @@ li.nav-item button.active {
     font-weight: 300;
     font-size: 40px;
 }
-
+.footer .vote-for-us{
+    margin-top: 30px;
+}
+.footer .vote-for-us h3{
+    color: white;
+}
 @media (max-width: 568px) {
     .main-menu .nav .nav-item .nav-link {
         border-radius: 0;
