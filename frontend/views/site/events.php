@@ -63,7 +63,7 @@ $baseUrl = Yii::$app->request->baseUrl;
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid d-none d-md-block">
         <div class="row position-relative">
             <div class="left-bordered-event">
                 <img src="<?= "$baseUrl/images/left-bordered-beer.png" ?>" alt="img">
