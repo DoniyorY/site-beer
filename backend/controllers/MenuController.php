@@ -44,6 +44,7 @@ class MenuController extends Controller
     {
         $searchModel = new MenuSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
+        $dataProvider->query->orderBy(['id' => SORT_DESC]);
         if ($this->request->isPost) $this->actionCreate();
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -83,7 +84,7 @@ class MenuController extends Controller
                 $model->created = time();
                 $model->status = 0;
                 $model->save();
-                return $this->redirect(['index']);
+                return $this->redirect(['view','id'=>$model->id]);
             }
         } else {
             $model->loadDefaultValues();
