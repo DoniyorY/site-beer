@@ -9,11 +9,11 @@ $lang = Yii::$app->language;
 <section class="b">
     <div class="banner-main" style="background-image: url(<?= "$baseUrl/images/banner-image.png" ?>);">
         <!--<div class="filter"></div>-->
-        <div class="heading">
-            <h1 style="text-align: center"><span class="white">The History and Art of Brewing:</span>
-                <br>
-                <span class="yellow" style="color: #FFA025">From Traditions to Modern Trends</span></h1>
-        </div>
+    </div>
+    <div class="heading">
+        <h1 style="text-align: center"><span class="white">The History and Art of Brewing:</span>
+            <br>
+            <span class="yellow" style="color: #FFA025">From Traditions to Modern Trends</span></h1>
     </div>
 </section>
 

@@ -520,6 +520,7 @@ nav.navigation.top ul {
 }
 
 nav.navigation.top ul li {
+    margin-right: 30px;
     display: inline-block
 }
 

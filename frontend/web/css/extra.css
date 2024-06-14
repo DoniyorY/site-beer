@@ -16,12 +16,12 @@ div.banner-main {
     height: 100vh !important;
     background-size: cover; /* Обеспечивает, что изображение охватывает весь баннер */
     background-repeat: no-repeat; /* Избегает повторения изображения */
-    opacity: .9;
+    opacity: .6;
 }
 
 div.heading {
     position: absolute;
-    top: 65%;
+    top: 50%;
 }
 
 section.about-main {
@@ -166,6 +166,7 @@ section.main-beers .event-card-jazz img {
     height: 250px;
     margin-bottom: 10px;
 }
+
 .event-card-jazz .card-image img {
     margin-top: 10px;
 }
@@ -378,11 +379,22 @@ li.nav-item button.active {
     color: white;
     font-size: 35px;
 }
-.footer-logo:hover{
-    color:#bd812c;
+
+.footer-logo:hover {
+    color: #bd812c;
+}
+
+.event-card-title p {
+    font-size: 30px;
+    line-height: 45px;
 }
 
 @media (max-width: 568px) {
+    .event-card-title p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
     .main-menu .nav .nav-item .nav-link {
         border-radius: 0;
         background: #27373C;
@@ -394,17 +406,21 @@ li.nav-item button.active {
     .menu-addition p {
         font-size: 20px;
     }
-    .breadcrumbs-content{
-        left:0 !important;
+
+    .breadcrumbs-content {
+        left: 0 !important;
         width: 100%;
     }
-    .breadcrumbs-content h1{
+
+    .breadcrumbs-content h1 {
         font-size: 2.5rem !important;
     }
-    .breadcrumbs-content h2{
+
+    .breadcrumbs-content h2 {
         font-size: 2rem !important;
         width: 100%;
     }
+
     .about-title h2 {
         line-height: 35px;
     }
@@ -450,11 +466,13 @@ li.nav-item button.active {
         font-size: 20px;
         line-height: 25px;
     }
+
     .card-image {
         width: 100% !important;
         padding: 10px !important;
     }
-    .card-image img{
+
+    .card-image img {
         width: 100% !important;
     }
 }

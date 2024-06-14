@@ -15,6 +15,14 @@ $baseUrl = Yii::$app->request->baseUrl;
 </div>
 <section class="main-beers container">
     <div class="cards-container">
+        <div class="container event-card-title">
+            <p>
+                We carefully selected our beer varieties to satisfy the diverse tastes of our customers. Each type of
+                beer is crafted considering the preferences of both traditional and experimental flavor enthusiasts. We
+                have chosen four main varieties that cover a wide range of aromas and styles, from light lagers to rich
+                stouts.
+            </p>
+        </div>
         <div class="event-cards">
             <div class="event-card-jazz">
                 <div class="card-image">
