@@ -17,11 +17,11 @@ $baseUrl = Yii::$app->request->baseUrl;
 </div>
 <section class="events-main">
     <div class="container">
-        <div class="event-item">
-            <div class="item-left">
+        <div class="event-item row">
+            <div class="item-left col-md-4">
                 <img src="<?= "$baseUrl/images/event-item-1.png" ?>" alt="event-item">
             </div>
-            <div class="item-right">
+            <div class="item-right col-md-8">
                 <div class="title">
                     <h2 style="margin-bottom: 10px;">Host Your Gathering</h2>
                     <h2 style="color:#CD8A33">At Our Brewery</h2>
@@ -120,7 +120,7 @@ $baseUrl = Yii::$app->request->baseUrl;
         </div>
     </div>
 </section>
-<section class="pre-footer" >
+<section class="pre-footer">
     <img src="<?= "$baseUrl/images/3.png" ?>" alt="prefooter" style="width: 100%; object-fit: cover; opacity: 1">
 
 </section>

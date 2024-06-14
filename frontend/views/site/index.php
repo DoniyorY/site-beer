@@ -26,19 +26,8 @@ $lang = Yii::$app->language;
             </div>
             <div class="about-content">
                 <p>
-                    In the distant year of 1850, in the heart of a small village surrounded by dense forests and clear
-                    streams,
-                    the idea of creating a brewery was born. Ivan Petrovich, a local farmer and brewing enthusiast,
-                    decided to
-                    turn his hobby into a lifelong endeavor. He started with a small wooden structure on the edge of his
-                    farm,
-                    where he brewed the first batches of beer using ancient recipes handed down from his grandfather.
-                    Ivan
-                    Petrovich carefully selected the ingredients with love and precision: only the best spring water,
-                    malt, and
-                    hops grown on his own fields. His beer quickly gained popularity among neighbors and friends, and
-                    soon the
-                    word of this delicious and high-quality beverage spread throughout the region.
+                    Khmelnov Brewery began its operations in 2021. Since then, we have been tirelessly improving our
+                    recipes and technologies to delight our customers with excellent beer.
                 </p>
             </div>
         </div>
@@ -136,14 +125,13 @@ $lang = Yii::$app->language;
             <div class="row">
                 <div class="col-md-12">
                     <p class="c-title">
-                        A BEER RESTAURANT IN THE CITY CENTRE WITH HOME-BREWED BEERS AND GRILLED CHICKEN.
+                        Lamb Shank in Cream Sauce
                     </p>
                     <p class="c-content">
-                        Since 2011, we’ve been dishing out deliciousness with our slow roasted farm chicken and
-                        mouthwatering Burgundian specialties, perfectly paired with our own home-brewed beers. Plus, you
-                        can get hands-on by tapping your own beer at our tap tables. For bigger crews, our beer lounge
-                        and special group menаus are ready to roll. We believe in making you feel right at home, and
-                        reservations are a must. Check out our opening hours and swing by whenever you’re ready!
+                        Our signature Lamb Shank in Cream Sauce is a culinary masterpiece crafted for true gourmets. The
+                        tenderness of the lamb combined with the richness of the cream sauce will delight even the most
+                        discerning palates. Slowly braised until tender, the lamb shank is generously drenched in a
+                        fragrant cream sauce, promising a burst of flavors and unforgettable gastronomic experiences.
                     </p>
                 </div>
             </div>
