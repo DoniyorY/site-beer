@@ -394,7 +394,17 @@ li.nav-item button.active {
     .menu-addition p {
         font-size: 20px;
     }
-
+    .breadcrumbs-content{
+        left:0 !important;
+        width: 100%;
+    }
+    .breadcrumbs-content h1{
+        font-size: 2.5rem !important;
+    }
+    .breadcrumbs-content h2{
+        font-size: 2rem !important;
+        width: 100%;
+    }
     .about-title h2 {
         line-height: 35px;
     }
@@ -440,5 +450,11 @@ li.nav-item button.active {
         font-size: 20px;
         line-height: 25px;
     }
-
+    .card-image {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+    .card-image img{
+        width: 100% !important;
+    }
 }
