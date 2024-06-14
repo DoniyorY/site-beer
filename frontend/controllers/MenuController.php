@@ -2,6 +2,7 @@
 
 namespace frontend\controllers;
 
+use common\models\Menu;
 use common\models\MenuCategory;
 use yii\web\Controller;
 
