@@ -166,6 +166,9 @@ section.main-beers .event-card-jazz img {
     height: 250px;
     margin-bottom: 10px;
 }
+.event-card-jazz .card-image img {
+    margin-top: 10px;
+}
 
 .cards-container {
     margin-bottom: 40px;

@@ -18,22 +18,25 @@ $baseUrl = Yii::$app->request->baseUrl;
         <div class="event-cards">
             <div class="event-card-jazz">
                 <div class="card-image">
-                    <img src="<?= "$baseUrl/images/card-beer.png" ?>" alt="jazz-image">
+                    <img src="<?= "$baseUrl/images/jasur.png" ?>" alt="jazz-image">
                 </div>
                 <div class="card-content">
                     <div class="row">
                         <div class="col-md-8">
-                            <h2>Khamelov Jasur</h2>
+                            <h2>Khmelnov Jasur STOUT</h2>
                         </div>
                         <div class="col-md-4 text-end schedule">
-                            <p> 5.0% </p>
+                            <p> 5.8% </p>
                         </div>
                         <div class="col-md-12 event-card-content">
                             <p>
-                                Join us for an unforgettable Jazz Night at our beer restaurant! Immerse yourself in an
-                                evening of smooth melodies, delicious craft beers, and a warm, inviting atmosphere. On
-                                [date], we are excited to host an exceptional live jazz performance that promises to
-                                captivate and entertain.
+                                Perceived Malt Aroma and Flavor: The character is primarily defined by pronounced
+                                coffee-like roasted barley and moderate roasted malt aroma and flavor. The distinctive
+                                feature of a dry stout — dry roastiness — is achieved through the use of roasted barley.
+                                Initial malt and light caramel flavors give way to a recognizable roasted-dry bitterness
+                                in the aftertaste.
+                                Perceived Hop Aroma and Flavor: The character of European hops in both taste and aroma
+                                can range from absent to mild.
                             </p>
                         </div>
                     </div>
@@ -43,22 +46,24 @@ $baseUrl = Yii::$app->request->baseUrl;
         <div class="event-cards">
             <div class="event-card-jazz">
                 <div class="card-image">
-                    <img src="<?= "$baseUrl/images/card-beer.png" ?>" alt="jazz-image">
+                    <img src="<?= "$baseUrl/images/ipak-yoli.png" ?>" alt="jazz-image">
                 </div>
                 <div class="card-content">
                     <div class="row">
                         <div class="col-md-8">
-                            <h2>Khamelov Jasur</h2>
+                            <h2>Khmelnov IPAK YOLI</h2>
                         </div>
                         <div class="col-md-4 text-end schedule">
-                            <p> 5.6% </p>
+                            <p> 5.4% </p>
                         </div>
                         <div class="col-md-12 event-card-content">
                             <p>
-                                Join us for an unforgettable Jazz Night at our beer restaurant! Immerse yourself in an
-                                evening of smooth melodies, delicious craft beers, and a warm, inviting atmosphere. On
-                                [date], we are excited to host an exceptional live jazz performance that promises to
-                                captivate and entertain.
+                                Perceived Malt Aroma and Flavor: The malt characteristics in both taste and aroma range
+                                from medium-weak to medium intensity.
+                                Perceived Hop Aroma and Flavor: From strong to very strong, exhibiting a wide spectrum
+                                of characteristics (including floral, citrus, fruity (berries, tropical, stone fruits,
+                                and others), sulfuric, diesel-like, onion-garlic, catty, piney or resinous, and many
+                                others).
                             </p>
                         </div>
                     </div>
@@ -68,22 +73,24 @@ $baseUrl = Yii::$app->request->baseUrl;
         <div class="event-cards">
             <div class="event-card-jazz">
                 <div class="card-image">
-                    <img src="<?= "$baseUrl/images/card-beer.png" ?>" alt="jazz-image">
+                    <img src="<?= "$baseUrl/images/bahor-helles.png" ?>" alt="jazz-image">
                 </div>
                 <div class="card-content">
                     <div class="row">
                         <div class="col-md-8">
-                            <h2>Khamelov Jasur</h2>
+                            <h2>Khmelnov Bahor helles</h2>
                         </div>
                         <div class="col-md-4 text-end schedule">
                             <p> 5.0% </p>
                         </div>
                         <div class="col-md-12 event-card-content">
                             <p>
-                                Join us for an unforgettable Jazz Night at our beer restaurant! Immerse yourself in an
-                                evening of smooth melodies, delicious craft beers, and a warm, inviting atmosphere. On
-                                [date], we are excited to host an exceptional live jazz performance that promises to
-                                captivate and entertain.
+                                Perceived Malt Aroma and Flavor: Pronounced malt aroma and flavor. There may be a small
+                                amount of sulfuric aromas and flavors created by the yeast. The malt character is
+                                sometimes bready, reminiscent of slightly toasted malted barley. There should be no
+                                caramel character.
+                                Perceived Hop Aroma and Flavor: Hop aroma ranges from absent to weak. Hop flavor ranges
+                                from very weak to weak, created by noble-type hops.
                             </p>
                         </div>
                     </div>
@@ -93,47 +100,24 @@ $baseUrl = Yii::$app->request->baseUrl;
         <div class="event-cards">
             <div class="event-card-jazz">
                 <div class="card-image">
-                    <img src="<?= "$baseUrl/images/card-beer.png" ?>" alt="jazz-image">
+                    <img src="<?= "$baseUrl/images/oq-quyosh.png" ?>" alt="jazz-image">
                 </div>
                 <div class="card-content">
                     <div class="row">
                         <div class="col-md-8">
-                            <h2>Khamelov Jasur</h2>
+                            <h2>Khmelnov Oq quyosh</h2>
                         </div>
                         <div class="col-md-4 text-end schedule">
-                            <p> 5.0% </p>
+                            <p> 4.8% </p>
                         </div>
                         <div class="col-md-12 event-card-content">
                             <p>
-                                Join us for an unforgettable Jazz Night at our beer restaurant! Immerse yourself in an
-                                evening of smooth melodies, delicious craft beers, and a warm, inviting atmosphere. On
-                                [date], we are excited to host an exceptional live jazz performance that promises to
-                                captivate and entertain.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="event-cards">
-            <div class="event-card-jazz">
-                <div class="card-image">
-                    <img src="<?= "$baseUrl/images/card-beer.png" ?>" alt="jazz-image">
-                </div>
-                <div class="card-content">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h2>Khamelov Jasur</h2>
-                        </div>
-                        <div class="col-md-4 text-end schedule">
-                            <p> 5.0% </p>
-                        </div>
-                        <div class="col-md-12 event-card-content">
-                            <p>
-                                Join us for an unforgettable Jazz Night at our beer restaurant! Immerse yourself in an
-                                evening of smooth melodies, delicious craft beers, and a warm, inviting atmosphere. On
-                                [date], we are excited to host an exceptional live jazz performance that promises to
-                                captivate and entertain.
+                                Perceived Malt Aroma and Flavor: In lighter styles, characteristics of pale malt are
+                                present, ranging from weak to medium-weak. In darker styles, malt characteristics such
+                                as cocoa, chocolate, caramel, toffee, or biscuit may be present, ranging from weak to
+                                medium-weak. In darker styles, the astringency of roasted malt is acceptable if balanced
+                                with malty sweetness.
+                                Perceived Hop Aroma and Flavor: Ranges from weak to medium-strong.
                             </p>
                         </div>
                     </div>
