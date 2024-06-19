@@ -105,7 +105,7 @@ $baseUrl = Yii::$app->request->baseUrl;
             <div class="item-left">
                 <img src="<?= "$baseUrl/images/Mask-group.png" ?>" alt="event-item">
             </div>
-            <div class="item-right">
+            <div class="item-right rr">
                 <div class="title">
                     <h2 style="color:#CD8A33">Unique Ambiance</h2>
                 </div>

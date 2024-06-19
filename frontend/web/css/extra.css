@@ -480,6 +480,8 @@ li.nav-item button.active {
         width: 100% !important;
     }
     .back-content{
+        padding-left: 5px;
+        padding-right: 5px;
         top: 30% !important;
         width: 100% !important;
         left: 0!important;
@@ -492,8 +494,8 @@ li.nav-item button.active {
     }
     .event-content{
         margin-top: 50px;
-        padding-left: 25px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .event-content p{
         font-size: 20px;
@@ -506,10 +508,15 @@ li.nav-item button.active {
         max-width: 100%;
         object-fit: cover;
     }
-    .event-item .item-right{
-        padding: 15px 0 0 0 !important;
+    .event-item .rr{
+        padding: 15px 0 0 10px !important;
     }
+
     .event-content .title{
         margin-bottom: 30px;
+    }
+    .col-md-12.text-center.my-5 h2{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
     }
 }
