@@ -46,7 +46,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         <li id="menu-item-6786" class="menu-item  groups"><a
                     href="<?= Url::to(['site/beers']) ?>">Beers</a></li>
         <li id="menu-item-6780" class="menu-item  contact-visit"><a
-                    href="#">Contact</a></li>
+                    href="#contacts">Contact</a></li>
         <li id="menu-item-3657-nl"
             class="lang-item lang-item-2 d-none lang-item-nl lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-3657-nl ">
             <a href="#" hreflang="nl-NL" lang="nl-NL"><img
@@ -99,7 +99,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 
 <?= $content ?>
-<footer>
+<footer id="contacts">
     <div class="socialmedia">
         <a href="<?=Yii::$app->params['instagram_link']?>" target="_blank" class="instagram"><img
                     src="<?= "$baseUrl/images/icon-instagram.svg" ?>"
@@ -124,7 +124,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                         </li>
                         <li id="menu-item-6808" class="menu-item our-beers"><a href="<?= Url::to(['site/beers']) ?>">
                                 Our beers</a></li>
-                        <li id="menu-item-3998" class="menu-item tap-tables"><a href="<?= Url::to(['site/contact']) ?>">Contacts</a>
+                        <li id="menu-item-3998" class="menu-item tap-tables"><a href="#contacts">Contacts</a>
                         </li>
 
                         <li class="menu-item vote-for-us">
@@ -141,7 +141,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     <ul class="sub-menu">
                          <li id="menu-item-6809"
                             class="menu-item mt-5 menu-item-type-post_type menu-item-object-page menu-item-6809 contact-visit">
-                            <a href="#">Contact &amp; visit</a></li>
+                            <a href="#contacts">Contact &amp; visit</a></li>
                         <li id="menu-item-6805"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6805 privacy"><a
                                     href="#">Privacy</a></li>
