@@ -390,6 +390,10 @@ li.nav-item button.active {
 }
 
 @media (max-width: 568px) {
+    .navigation #brand img{
+        width: 230px;
+        object-fit: cover;
+    }
     .event-card-title p {
         font-size: 20px;
         line-height: 25px;

@@ -58,7 +58,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 </nav>
 <a href="#ft-open" class="book-button">
     Reserveer</a>
-<a href="javascript:void(0)" class="main-menu-trigger">
+<a class="main-menu-trigger" data-bs-toggle="collapse" href="#mobile-header-collapse" role="button" aria-expanded="false" aria-controls="mobile-header-collapse">
     <span class="line"></span>
     <span class="line"></span>
     <span class="line"></span>
@@ -72,30 +72,39 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         </g>
     </svg>
 </a>
-<nav class="navigation main">
-    <div class="overlay"></div>
-    <div class="contain">
-        <ul class="lang-switcher">
-            <li class="lang-item lang-item-2 lang-item-nl lang-item-first">
-                <a lang="nl-NL" hreflang="nl-NL" href="#">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAY1BMVEX/AAD8AADzAADqAAD/fYz+dYT6aHr7XG36VGb6R1f4L0H/ECz+mKXw8fH9/f36+vr19vbW1tbS0tIAG493n89cjcZNgsA/eLkzcbUpaLAcYKwAAFEAA4ANU6UAADsAAHgAAGcSgiW+AAAAS0lEQVR4AQXBiQ3CQBAAMc/dConQf688SoIdBIIyQiR9R0tCuM2rNxHpMqsDIWiBEE4NgnBiHhVJcs48P0uSjXsPl4hLmH2EHzb4A7DPDGppZMSwAAAAAElFTkSuQmCC"
-                         alt="Nederlands" width="16" height="11" style="width: 16px; height: 11px;">
-                </a>
-            </li>
-        </ul>
-        <a href="#" class="make-reservation">
-            <span>
-                <img src="https://www.bierfabriek.com/amsterdam/wp-content/themes/build-a-rocket/dist/images/icon-reservation-alt.png"
-                     alt="Make reservation">
-                Make your reservation            </span>
-        </a>
-        <ul id="menu-mobiel-engels">
-            <li id="menu-item-5621"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables"><a
-                        href="#">Tap tables</a></li>
-        </ul>
-    </div>
-</nav>
+<div class="collapse" id="mobile-header-collapse" style=" position:absolute;">
+    <nav class="navigation main">
+        <div class="overlay"></div>
+        <div class="contain">
+            <ul class="lang-switcher">
+                <li class="lang-item lang-item-2 lang-item-nl lang-item-first">
+                    <a lang="nl-NL" hreflang="nl-NL" href="#">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAY1BMVEX/AAD8AADzAADqAAD/fYz+dYT6aHr7XG36VGb6R1f4L0H/ECz+mKXw8fH9/f36+vr19vbW1tbS0tIAG493n89cjcZNgsA/eLkzcbUpaLAcYKwAAFEAA4ANU6UAADsAAHgAAGcSgiW+AAAAS0lEQVR4AQXBiQ3CQBAAMc/dConQf688SoIdBIIyQiR9R0tCuM2rNxHpMqsDIWiBEE4NgnBiHhVJcs48P0uSjXsPl4hLmH2EHzb4A7DPDGppZMSwAAAAAElFTkSuQmCC"
+                             alt="Nederlands" width="16" height="11" style="width: 16px; height: 11px;">
+                    </a>
+                </li>
+            </ul>
+            <ul id="menu-mobiel-engels">
+                <li id="menu-item-5621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
+                    <a href="<?=Yii::$app->homeUrl?>"> Home </a>
+                </li>
+                <li id="menu-item-5621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
+                    <a href="<?=Url::to(['menu/index'])?>"> Our Menu</a>
+                </li>
+                <li id="menu-item-5621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
+                    <a href="<?=Url::to(['site/events'])?>"> Events</a>
+                </li>
+                <li id="menu-item-5621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
+                    <a href="<?=Url::to(['site/beers'])?>"> Beers</a>
+                </li>
+                <li id="menu-item-5621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
+                    <a href="#contacts"> Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
 
 
 <?= $content ?>
