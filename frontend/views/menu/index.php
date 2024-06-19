@@ -29,83 +29,11 @@ use yii\helpers\Html;
                 <?php $i++; endforeach; ?>
         </ul>
         <div class="tab-content" id="pills-tabContent">
-            <!--<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                 tabindex="0">
-                <div class="menu-item">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="menu-item-title">
-                                <h2>NUTS MIX</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-end d-none d-md-block">
-                            <button class="btn btn-allergen"><img src="<?php /*= "$baseUrl/images/gluten-free.png" */ ?>" alt="">
-                                <img src="<?php /*= "$baseUrl/images/lactose-free.png" */ ?>" alt="">
-                                <img src="<?php /*= "$baseUrl/images/contain-the-allergen.png" */ ?>" alt="">
-                                <img src="<?php /*= "$baseUrl/images/summer-kitchen.png" */ ?>" alt=""></button>
-                        </div>
-                        <div class="col-md-3 col-6 text-center">
-                            <h3>100 000 uzs</h3>
-                        </div>
-                        <div class="col-md-6">
-                            <p>
-                                Glazed peanuts, soft shell almonds and local specialty “Dona Shurak” salt-baked apricot
-                                hearts.(150 g)
-                            </p>
-                        </div>
-                        <div class="col-md-3 col-12 text-end d-block d-md-none">
-                            <button class="btn w-100 btn-allergen">
-                                <img src="<?php /*= "$baseUrl/images/gluten-free.png" */ ?>" alt="">
-                                <img src="<?php /*= "$baseUrl/images/lactose-free.png" */ ?>" alt="">
-                                <img src="<?php /*= "$baseUrl/images/contain-the-allergen.png" */ ?>" alt="">
-                                <img src="<?php /*= "$baseUrl/images/summer-kitchen.png" */ ?>" alt="">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="menu-item-title">
-                                <h2>NUTS MIX</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-end d-none d-md-block">
-                            <button class="btn btn-allergen">Allergen</button>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <p>
-                                        Glazed peanuts, soft shell almonds and local specialty “Dona Shurak” salt-baked
-                                        apricot hearts.(150 g)
-                                    </p>
-                                </div>
-                                <div class="col-md-6 d-none d-md-block"></div>
-                                <div class="col-6 text-center menu-addition">
-                                    <p>Company set</p>
-                                    <p>Mini set</p>
-                                </div>
-                                <div class="col-md-3 d-none d-md-block"></div>
-                                <div class="col-md-3 col-6 text-center">
-                                    <h3>100 000 uzs</h3>
-                                    <h3>150 000 uzs</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-12 text-end d-block d-md-none">
-                            <button class="btn w-100 btn-allergen">Allergen</button>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-            <?php foreach ($category as $item): ?>
-                <div class="tab-pane fade show active" id="<?= $item->id ?>" role="tabpanel"
+            <?php $i = 0;
+            foreach ($category as $item): ?>
+                <div class="tab-pane fade <?= ($i === 0) ? 'show active' : '' ?>" id="<?= $item->id ?>" role="tabpanel"
                      aria-labelledby="<?= $item->id ?>-tab"
                      tabindex="0">
-
                     <?php $menu = \common\models\Menu::findAll(['category_id' => $item->id]);
                     foreach ($menu as $m): $addtional = \common\models\MenuAdditional::findAll(['menu_id' => $m->id]); ?>
                         <?php if ($addtional): ?>
@@ -158,12 +86,12 @@ use yii\helpers\Html;
                                     <div class="col-md-3 col-12 text-end d-block d-md-none">
                                         <?php $imgs = Connector::findAll(['menu_id' => $m->id]);
                                         if ($imgs): ?>
-                                        <button class="btn btn-allergen w-100">
-                                            <?php foreach ($imgs as $img): ?>
-                                                <img src="<?= "$baseUrl/uploads/allergens/{$img->allergen->logo}" ?>"
-                                                     alt="">
-                                            <?php endforeach; ?>
-                                        </button>
+                                            <button class="btn btn-allergen w-100">
+                                                <?php foreach ($imgs as $img): ?>
+                                                    <img src="<?= "$baseUrl/uploads/allergens/{$img->allergen->logo}" ?>"
+                                                         alt="">
+                                                <?php endforeach; ?>
+                                            </button>
                                         <?php else: ?>
                                             <button class="btn btn-allergen">Allergen</button>
                                         <?php endif; ?>
@@ -217,7 +145,7 @@ use yii\helpers\Html;
                         <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
-            <?php endforeach; ?>
+            <?php $i++; endforeach; ?>
         </div>
     </div>
 
