@@ -62,10 +62,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
             //'id',
             [
-                    'attribute'=>'category_id',
-                'value'=>function ($data) {
+                'attribute' => 'category_id',
+                'value' => function ($data) {
                     return $data->category->name_ru;
-                }
+                },
+                'fitler'=>\yii\helpers\ArrayHelper::map(\common\models\MenuCategory::find()->all(), 'id', 'name_ru'),
             ],
             'title_ru',
             //'desc_ru:ntext',
