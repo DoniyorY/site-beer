@@ -18,10 +18,10 @@ $baseUrl = Yii::$app->request->baseUrl;
 <section class="events-main">
     <div class="container">
         <div class="event-item row">
-            <div class="item-left col-md-4">
+            <div class="item-left col-md-4 col-12">
                 <img src="<?= "$baseUrl/images/event-item-1.png" ?>" alt="event-item">
             </div>
-            <div class="item-right col-md-8">
+            <div class="item-right col-md-8 col-12">
                 <div class="title">
                     <h2 style="margin-bottom: 10px;">Host Your Gathering</h2>
                     <h2 style="color:#CD8A33">At Our Brewery</h2>

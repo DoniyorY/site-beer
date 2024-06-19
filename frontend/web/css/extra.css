@@ -479,4 +479,37 @@ li.nav-item button.active {
     .card-image img {
         width: 100% !important;
     }
+    .back-content{
+        top: 30% !important;
+        width: 100% !important;
+        left: 0!important;
+    }
+    .item-left{
+        max-width: 100% !important;
+    }
+    .item-right{
+        padding: 30px 10px 0 30px;
+    }
+    .event-content{
+        margin-top: 50px;
+        padding-left: 25px;
+        padding-right: 30px;
+    }
+    .event-content p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .event-item{
+        flex-direction: column;
+    }
+    .event-item .item-left{
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .event-item .item-right{
+        padding: 15px 0 0 0 !important;
+    }
+    .event-content .title{
+        margin-bottom: 30px;
+    }
 }
