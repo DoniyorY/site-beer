@@ -118,8 +118,9 @@ section.about-main {
 
 .c-content {
     color: #FFF;
-    font-size: 20px;
+    font-size: 40px;
     margin-top: 20px;
+    line-height: 50px;
 }
 
 section.products {
@@ -388,7 +389,16 @@ li.nav-item button.active {
     font-size: 30px;
     line-height: 45px;
 }
+.footer-schedule{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
 
+}
+.footer-schedule p{
+    margin-bottom: 0;
+}
 @media (max-width: 568px) {
     .navigation #brand img{
         width: 230px;

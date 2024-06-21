@@ -69,11 +69,11 @@ use yii\helpers\Html;
                                                 <div class="col-md-6 d-none d-md-block"></div>
                                                 <div class="col-6 text-center menu-addition">
                                                     <?php foreach ($addtional as $add): ?>
-                                                        <p><?= $add->{"name_$lang"} ?></p>
+                                                        <p><?= $add->{"name_$lang"} ?> <span style="font-size: 24px;">(<?=$add->weight?>g)</span></p>
                                                     <?php endforeach; ?>
                                                 </div>
                                                 <div class="col-md-3 d-none d-md-block"></div>
-                                                <div class="col-md-3 col-6 text-center">
+                                                <div class="col-md-3 col-6 text-end">
                                                     <?php foreach ($addtional as $add): ?>
                                                         <h3><?= Yii::$app->formatter->asDecimal($add->price, 0) ?>
                                                             uzs</h3>
@@ -119,8 +119,8 @@ use yii\helpers\Html;
                                             <?php endif; ?>
                                         </button>
                                     </div>
-                                    <div class="col-md-3 col-6 text-center">
-                                        <h3><?= Yii::$app->formatter->asDecimal($m->price, 0) ?> uzs</h3>
+                                    <div class="col-md-3 col-6 text-end">
+                                        <h3 style="margin-right: 15px;"><?= Yii::$app->formatter->asDecimal($m->price, 0) ?> uzs</h3>
                                     </div>
                                     <div class="col-md-6">
                                         <p>

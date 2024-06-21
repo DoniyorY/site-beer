@@ -4,6 +4,7 @@ namespace frontend\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
+use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
@@ -61,7 +62,28 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        /*if (array_key_exists('age_verified', $_SESSION)) {
+            $age = $_SESSION['age_verified'];
+        } else {
+            $_SESSION['age_verified'] = 0;
+        }
+        if ($_SESSION['age_verified'] == 0) {
+            return $this->redirect(Url::to(['verification']));
+        }*/
         return $this->render('index');
+    }
+
+    public function actionVerification()
+    {
+        if ($_SESSION['age_verified'] == 1) return $this->redirect(Yii::$app->homeUrl);
+        return $this->render('verification');
+    }
+
+    public function actionVerify()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+        $_SESSION['age_verified'] = 1;
+        return $this->redirect(Yii::$app->request->referrer);
     }
 
     public function actionMenu()

@@ -9,6 +9,8 @@ use app\widgets\Alert;
 use yii\bootstrap5\Html;
 use yii\helpers\Url;
 
+$_SESSION['age_verified'] = 0;
+
 AppAsset::register($this);
 $baseUrl = Yii::$app->request->baseUrl;
 $this->registerCsrfMetaTags();
@@ -17,8 +19,9 @@ $this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, 
 $this->registerMetaTag(['name' => 'description', 'content' => $this->params['meta_description'] ?? '']);
 $this->registerMetaTag(['name' => 'keywords', 'content' => $this->params['meta_keywords'] ?? '']);
 $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii::getAlias('@web/favicon.svg')]);
+
 ?>
-<?php $this->beginPage() ?>
+<?php $this->beginPage(); ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
@@ -29,9 +32,9 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
           rel="stylesheet">
     <?php $this->head() ?>
 </head>
+
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
-
 
 <nav class="navigation top">
     <a href="<?= Yii::$app->homeUrl ?>" id="brand">
@@ -58,7 +61,8 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 </nav>
 <a href="#ft-open" class="book-button">
     Reserveer</a>
-<a class="main-menu-trigger" data-bs-toggle="collapse" href="#mobile-header-collapse" role="button" aria-expanded="false" aria-controls="mobile-header-collapse">
+<a class="main-menu-trigger" data-bs-toggle="collapse" href="#mobile-header-collapse" role="button"
+   aria-expanded="false" aria-controls="mobile-header-collapse">
     <span class="line"></span>
     <span class="line"></span>
     <span class="line"></span>
@@ -85,38 +89,40 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </li>
             </ul>
             <ul id="menu-mobiel-engels">
-                <li id="menu-item-5621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
-                    <a href="<?=Yii::$app->homeUrl?>"> Home </a>
+                <li id="menu-item-5621"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
+                    <a href="<?= Yii::$app->homeUrl ?>"> Home </a>
                 </li>
-                <li id="menu-item-5621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
-                    <a href="<?=Url::to(['menu/index'])?>"> Our Menu</a>
+                <li id="menu-item-5621"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
+                    <a href="<?= Url::to(['menu/index']) ?>"> Our Menu</a>
                 </li>
-                <li id="menu-item-5621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
-                    <a href="<?=Url::to(['site/events'])?>"> Events</a>
+                <li id="menu-item-5621"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
+                    <a href="<?= Url::to(['site/events']) ?>"> Events</a>
                 </li>
-                <li id="menu-item-5621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
-                    <a href="<?=Url::to(['site/beers'])?>"> Beers</a>
+                <li id="menu-item-5621"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
+                    <a href="<?= Url::to(['site/beers']) ?>"> Beers</a>
                 </li>
-                <li id="menu-item-5621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
+                <li id="menu-item-5621"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621 tap-tables">
                     <a href="#contacts"> Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
-
-
-
 <?= $content ?>
 <footer id="contacts">
     <div class="socialmedia">
-        <a href="<?=Yii::$app->params['instagram_link']?>" target="_blank" class="instagram"><img
+        <a href="<?= Yii::$app->params['instagram_link'] ?>" target="_blank" class="instagram"><img
                     src="<?= "$baseUrl/images/icon-instagram.svg" ?>"
                     alt="Instagram"></a>
-        <a href="#" target="_blank" class="facebook"><img
+        <a href="<?= Yii::$app->params['facebook_link'] ?>" target="_blank" class="facebook"><img
                     src="<?= "$baseUrl/images/icon-facebook.svg" ?>"
                     alt="Facebook"></a>
-        <a href="#" target="_blank" class="mail"><img
+        <a href="mailto:<?= Yii::$app->params['adminEmail'] ?>" target="_blank" class="mail"><img
                     src="<?= "$baseUrl/images/icon-mail.svg" ?>"
                     alt="Email"></a>
     </div>
@@ -148,7 +154,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6802 information">
                     <a href="#">Information</a>
                     <ul class="sub-menu">
-                         <li id="menu-item-6809"
+                        <li id="menu-item-6809"
                             class="menu-item mt-5 menu-item-type-post_type menu-item-object-page menu-item-6809 contact-visit">
                             <a href="#contacts">Contact &amp; visit</a></li>
                         <li id="menu-item-6805"
@@ -170,13 +176,14 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 <li class="times">
                     <h4>Opening hours</h4>
                     <p class="mt-3">
-                        Monday&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 11:00 – 01:00<br>
-                        Tuesday&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 11:00 – 01:00<br>
-                        Wednesday &nbsp; 11:00 – 01:00<br>
-                        Thursday&nbsp; &nbsp; &nbsp; &nbsp; 11:00 – 01:00<br>
-                        Friday&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 11:00 – 01:00<br>
-                        Saturday&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 11:00 – 01:00<br>
-                        Sunday&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 11:00 – 01:00
+                        Monday &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:00 – 01:00<br>
+                        Tuesday &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:00 – 01:00<br>
+                        Wednesday &nbsp; &nbsp;11:00 – 01:00<br>
+                        Thursday &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;11:00 – 01:00<br>
+                        Friday &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 –
+                        01:00<br>
+                        Saturday &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 – 01:00<br>
+                        Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 – 01:00
                     </p>
                     <section class="agenda-soon"></section>
                     <section class="info-blocks">
@@ -185,13 +192,11 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </li>
             </ul>
         </nav>
-
     </div>
     <p class="developed-by">Powered by:
         <a href="https://silkroad-samarkand.com" title="SilkRoad-Samarkand" target="_blank">SilkRoad Samarkand</a>
     </p>
 </footer>
-
 <?php $this->endBody() ?>
 </body>
 </html>
