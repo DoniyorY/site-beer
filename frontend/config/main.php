@@ -15,6 +15,7 @@ return [
         'request' => [
             'csrfParam' => '_csrf-frontend',
             'baseUrl'=>'',
+            'cookieValidationKey' => 'siteBeerKhelnovBeerCookie',
         ],
         'language'=>'en',
         'user' => [
@@ -25,6 +26,7 @@ return [
         'session' => [
             // this is the name of the session cookie used for login on the frontend
             'name' => 'advanced-frontend',
+            'class' => 'yii\web\Session',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

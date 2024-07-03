@@ -61,27 +61,29 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        /*if (array_key_exists('age_verified', $_SESSION)) {
-            $age = $_SESSION['age_verified'];
-        } else {
-            $_SESSION['age_verified'] = 0;
+        if (!Yii::$app->session->get('age_verified', false)) {
+            return $this->redirect(['verification']);
         }
-        if ($_SESSION['age_verified'] == 0) {
-            return $this->redirect(Url::to(['verification']));
-        }*/
+
         return $this->render('index');
     }
 
     public function actionVerification()
     {
-        if ($_SESSION['age_verified'] == 1) return $this->redirect(Yii::$app->homeUrl);
+        if (Yii::$app->session->get('age_verified')) return $this->redirect(Yii::$app->homeUrl);
+        Yii::$app->session->set('age_verified', 0);
         return $this->render('verification');
     }
 
     public function actionVerify()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
-        $_SESSION['age_verified'] = 1;
+        if ($_GET['verify'] == 1) {
+            Yii::$app->session->set('age_verified', 1);
+
+        } else {
+            return $this->redirect('https://google.com');
+        }
         return $this->redirect(Yii::$app->request->referrer);
     }
 
@@ -105,7 +107,7 @@ class SiteController extends Controller
      *
      * @return Response|string
      */
-     public function actionLogin()
+    public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();

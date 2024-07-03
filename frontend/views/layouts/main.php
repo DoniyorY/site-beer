@@ -8,9 +8,6 @@ use frontend\assets\AppAsset;
 use app\widgets\Alert;
 use yii\bootstrap5\Html;
 use yii\helpers\Url;
-
-$_SESSION['age_verified'] = 0;
-
 AppAsset::register($this);
 $baseUrl = Yii::$app->request->baseUrl;
 $this->registerCsrfMetaTags();

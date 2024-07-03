@@ -32,7 +32,7 @@ $this->title = 'Verification';
                            class="btn btn-primary w-50 btn-lg">Да</a>
                     </div>
                     <div class="col-6 mt-3 modal-age-button">
-                        <a href="<?= Url::to(['site/verify', 'verify' => 2]) ?>" data-method="post" type="button"
+                        <a href="<?= Url::to(['site/verify', 'verify' => 0]) ?>" data-method="post" type="button"
                            class="btn btn-secondary w-50 btn-lg">Нет</a>
                     </div>
                 </div>
