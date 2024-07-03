@@ -61,15 +61,13 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        if (!Yii::$app->session->get('age_verified', false)) {
-            return $this->redirect(['verification']);
-        }
-
+        $this->findAge();
         return $this->render('index');
     }
 
     public function actionVerification()
     {
+
         if (Yii::$app->session->get('age_verified')) return $this->redirect(Yii::$app->homeUrl);
         Yii::$app->session->set('age_verified', 0);
         return $this->render('verification');
@@ -89,16 +87,19 @@ class SiteController extends Controller
 
     public function actionMenu()
     {
+        $this->findAge();
         return $this->render('menu');
     }
 
     public function actionBeers()
     {
+        $this->findAge();
         return $this->render('beers');
     }
 
     public function actionEvents()
     {
+        $this->findAge();
         return $this->render('events');
     }
 
@@ -162,5 +163,11 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+    protected function findAge(){
+        if (!Yii::$app->session->get('age_verified', false)) {
+            return $this->redirect(['verification']);
+        }
     }
 }
