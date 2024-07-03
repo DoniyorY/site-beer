@@ -16,6 +16,7 @@ return [
             'csrfParam' => '_csrf-frontend',
             'baseUrl'=>'',
         ],
+        'language'=>'en',
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
