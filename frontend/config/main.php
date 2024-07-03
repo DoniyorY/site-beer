@@ -44,11 +44,11 @@ return [
             'languages' => ['en'=>'en','ru'=>'ru','uz'=>'uz'],*/ // List all supported languages here
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules'=>[
+            /*'rules'=>[
                 ''=>'site/index',
                 'menu'=>'menu/index',
                 'events'=>'site/events',
-            ]
+            ]*/
         ],
 
     ],
