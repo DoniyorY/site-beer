@@ -40,7 +40,7 @@ return [
 
         'urlManager' => [
             'class' => 'codemix\localeurls\UrlManager',
-            'languages' => ['ru', 'en', 'uz'], // List all supported languages here
+            'languages' => ['en'=>'en','ru'=>'ru','uz'=>'uz'], // List all supported languages here
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules'=>[
