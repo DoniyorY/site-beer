@@ -2,7 +2,7 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'Main Page';
+$this->title = 'Khmelnov Beer Factory';
 $baseUrl = Yii::$app->request->baseUrl;
 $lang = Yii::$app->language;
 ?>

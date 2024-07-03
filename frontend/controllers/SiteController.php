@@ -4,12 +4,11 @@ namespace frontend\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
-use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
-use app\models\LoginForm;
-use app\models\ContactForm;
+use frontend\models\LoginForm;
+use frontend\models\ContactForm;
 
 class SiteController extends Controller
 {
@@ -89,7 +88,6 @@ class SiteController extends Controller
     public function actionMenu()
     {
         return $this->render('menu');
-
     }
 
     public function actionBeers()
@@ -107,7 +105,7 @@ class SiteController extends Controller
      *
      * @return Response|string
      */
-    public function actionLogin()
+     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
