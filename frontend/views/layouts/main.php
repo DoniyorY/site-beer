@@ -8,6 +8,7 @@ use frontend\assets\AppAsset;
 use app\widgets\Alert;
 use yii\bootstrap5\Html;
 use yii\helpers\Url;
+$lang=Yii::$app->language;
 AppAsset::register($this);
 $baseUrl = Yii::$app->request->baseUrl;
 $this->registerCsrfMetaTags();
@@ -40,13 +41,13 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     </a>
     <ul id="menu-desktop-menu-en">
         <li id="menu-item-6821" class="menu-item our-menu"><a
-                    href="<?= Url::to(['menu/index']) ?>">Our Menu</a></li>
+                    href="<?= Url::to(['menu/index']) ?>"><?=Yii::$app->params['Our Menu'][$lang]?></a></li>
         <li id="menu-item-3643" class="menu-item  tap-tables"><a
-                    href="<?= Url::to(['site/events']) ?>">Events</a></li>
+                    href="<?= Url::to(['site/events']) ?>"><?=Yii::$app->params['Events'][$lang]?></a></li>
         <li id="menu-item-6786" class="menu-item  groups"><a
-                    href="<?= Url::to(['site/beers']) ?>">Beers</a></li>
+                    href="<?= Url::to(['site/beers']) ?>"><?=Yii::$app->params['Beers'][$lang]?></a></li>
         <li id="menu-item-6780" class="menu-item  contact-visit"><a
-                    href="#contacts">Contact</a></li>
+                    href="#contacts"><?=Yii::$app->params['Contact'][$lang]?></a></li>
         <li id="menu-item-3657-nl"
             class="lang-item lang-item-2 d-none lang-item-nl lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-3657-nl ">
             <a href="#" hreflang="nl-NL" lang="nl-NL"><img
@@ -128,19 +129,18 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             <ul id="menu-footer-eng">
                 <li id="menu-item-4000"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2722 current_page_item menu-item-has-children menu-item-4000 active bierfabriek active">
-                    <a href="<?= Yii::$app->homeUrl ?>" aria-current="page">Home</a>
+                    <a href="<?= Yii::$app->homeUrl ?>" aria-current="page"><?=Yii::$app->params['Home'][$lang]?></a>
                     <ul class="sub-menu">
-                        <li id="menu-item-6810" class="menu-item our-menu mt-5"><a href="<?= Url::to(['site/menu']) ?>">Our
-                                Menu</a></li>
-                        <li id="menu-item-4003" class="menu-item brewery"><a href="<?= Url::to(['site/events']) ?>">Event</a>
+                        <li id="menu-item-6810" class="menu-item our-menu mt-5"><a href="<?= Url::to(['site/menu']) ?>"><?=Yii::$app->params['Our Menu'][$lang]?></a></li>
+                        <li id="menu-item-4003" class="menu-item brewery"><a href="<?= Url::to(['site/events']) ?>"><?=Yii::$app->params['Events'][$lang]?></a>
                         </li>
                         <li id="menu-item-6808" class="menu-item our-beers"><a href="<?= Url::to(['site/beers']) ?>">
-                                Our beers</a></li>
-                        <li id="menu-item-3998" class="menu-item tap-tables"><a href="#contacts">Contacts</a>
+                                <?=Yii::$app->params['Beers'][$lang]?></a></li>
+                        <li id="menu-item-3998" class="menu-item tap-tables"><a href="#contacts"><?=Yii::$app->params['Contact'][$lang]?></a>
                         </li>
 
                         <li class="menu-item vote-for-us">
-                            <h3>VOTE FOR US</h3>
+                            <h3><?=Yii::$app->params['VOTE FOR US'][$lang]?></h3>
                             <a href="https://untappd.com/Khmelnov" class="footer-logo" target="_blank">
                                 UNTAPPD
                             </a>
@@ -149,39 +149,30 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </li>
                 <li id="menu-item-6802"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6802 information">
-                    <a href="#">Information</a>
+                    <a href="#"><?=Yii::$app->params['Information'][$lang]?></a>
                     <ul class="sub-menu">
                         <li id="menu-item-6809"
                             class="menu-item mt-5 menu-item-type-post_type menu-item-object-page menu-item-6809 contact-visit">
-                            <a href="#contacts">Contact &amp; visit</a></li>
+                            <a href="#contacts"><?=Yii::$app->params['Contact &amp; visit'][$lang]?></a></li>
                         <li id="menu-item-6805"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6805 privacy"><a
-                                    href="#">Privacy</a></li>
+                                    href="#"><?=Yii::$app->params['Privacy'][$lang]?></a></li>
                     </ul>
                 </li>
                 <li class="address">
                     <p>
-                        <a href="#">Address</a><br>
+                        <a href="#"><?=Yii::$app->params['Address'][$lang]?></a><br>
                         <br>
-                        Rowing canal<br>
-                        Samarkand<br>
-                        Uzbekistan<br>
-                        tel: <?= Yii::$app->params['adminPhone'] ?><br>
+                        <?=Yii::$app->params['Rowing canal'][$lang]?><br>
+                        <?=Yii::$app->params['Samarkand'][$lang]?><br>
+                        <?=Yii::$app->params['Uzbekistan'][$lang]?><br>
+                        <?=Yii::$app->params['tel:'][$lang]?> <?= Yii::$app->params['adminPhone'] ?><br>
                         <a href="mailto:<?= Yii::$app->params['adminEmail'] ?>"><?= Yii::$app->params['adminEmail'] ?></a>
                     </p>
                 </li>
                 <li class="times">
-                    <h4>Opening hours</h4>
-                    <p class="mt-3">
-                        Monday &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:00 – 01:00<br>
-                        Tuesday &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:00 – 01:00<br>
-                        Wednesday &nbsp; &nbsp;11:00 – 01:00<br>
-                        Thursday &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;11:00 – 01:00<br>
-                        Friday &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 –
-                        01:00<br>
-                        Saturday &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 – 01:00<br>
-                        Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 – 01:00
-                    </p>
+                    <h4><?=Yii::$app->params['Opening hours'][$lang]?></h4>
+                    <?=Yii::$app->params['footer_schedule'][$lang]?>
                     <section class="agenda-soon"></section>
                     <section class="info-blocks">
                         <div class="container"></div>

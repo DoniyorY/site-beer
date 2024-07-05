@@ -14,10 +14,10 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
-            'baseUrl'=>'',
+            'baseUrl' => '',
             'cookieValidationKey' => 'siteBeerKhelnovBeerCookie',
         ],
-        'language'=>'en',
+        'language' => 'en',
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
@@ -42,15 +42,15 @@ return [
         ],
 
         'urlManager' => [
-           /* 'class' => 'codemix\localeurls\UrlManager',
-            'languages' => ['en'=>'en','ru'=>'ru','uz'=>'uz'],*/ // List all supported languages here
+            'class' => 'codemix\localeurls\UrlManager',
+            'languages' => ['en','ru','uz'], // List all supported languages here
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            /*'rules'=>[
-                ''=>'site/index',
-                'menu'=>'menu/index',
-                'events'=>'site/events',
-            ]*/
+            'rules' => [
+                '' => 'site/index',
+                'menu' => 'menu/index',
+                'events' => 'site/events',
+            ]
         ],
 
     ],

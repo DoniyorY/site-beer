@@ -61,7 +61,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $this->findAge();
+       // $this->findAge();
         return $this->render('index');
     }
 
@@ -78,7 +78,6 @@ class SiteController extends Controller
         Yii::$app->response->format = Response::FORMAT_JSON;
         if ($_GET['verify'] == 1) {
             Yii::$app->session->set('age_verified', 1);
-
         } else {
             return $this->redirect('https://google.com');
         }
@@ -87,19 +86,19 @@ class SiteController extends Controller
 
     public function actionMenu()
     {
-        $this->findAge();
+       // $this->findAge();
         return $this->render('menu');
     }
 
     public function actionBeers()
     {
-        $this->findAge();
+       // $this->findAge();
         return $this->render('beers');
     }
 
     public function actionEvents()
     {
-        $this->findAge();
+       // $this->findAge();
         return $this->render('events');
     }
 
