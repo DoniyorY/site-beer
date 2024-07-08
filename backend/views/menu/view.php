@@ -126,6 +126,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
                 <hr>
             </div>
+        </div>
+        <div class="col-md-12">
             <div class="row">
                 <div class="col-md-8">
                     <h2>Addition</h2>
