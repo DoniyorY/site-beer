@@ -54,7 +54,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'urlCreator' => function ($action, MenuCategory $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
                  },
-                'template'=>'{delete}'
+                'template'=>'{update} {delete}'
             ],
         ],
     ]); ?>
