@@ -4,6 +4,7 @@
 
 /** @var string $content */
 
+use cinghie\multilanguage\widgets\MultiLanguageWidget;
 use frontend\assets\AppAsset;
 use app\widgets\Alert;
 use yii\bootstrap5\Html;
@@ -48,13 +49,14 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     href="<?= Url::to(['site/beers']) ?>"><?=Yii::$app->params['Beers'][$lang]?></a></li>
         <li id="menu-item-6780" class="menu-item  contact-visit"><a
                     href="#contacts"><?=Yii::$app->params['Contact'][$lang]?></a></li>
-        <li id="menu-item-3657-nl"
-            class="lang-item lang-item-2 d-none lang-item-nl lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-3657-nl ">
-            <a href="#" hreflang="nl-NL" lang="nl-NL"><img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAY1BMVEX/AAD8AADzAADqAAD/fYz+dYT6aHr7XG36VGb6R1f4L0H/ECz+mKXw8fH9/f36+vr19vbW1tbS0tIAG493n89cjcZNgsA/eLkzcbUpaLAcYKwAAFEAA4ANU6UAADsAAHgAAGcSgiW+AAAAS0lEQVR4AQXBiQ3CQBAAMc/dConQf688SoIdBIIyQiR9R0tCuM2rNxHpMqsDIWiBEE4NgnBiHhVJcs48P0uSjXsPl4hLmH2EHzb4A7DPDGppZMSwAAAAAElFTkSuQmCC"
-                        alt="Nederlands" width="16" height="11" style="width: 16px; height: 11px;">
-            </a>
-        </li>
+        <?= MultiLanguageWidget::widget([
+            'addCurrentLang' => true, // add current lang
+            'calling_controller' => $this->context,
+            'image_type'  => 'classic', // classic or rounded
+            'link_home'   => true, // true or false
+            'widget_type' => 'classic', // classic or selector
+            'width'       => '28'
+        ]); ?>
     </ul>
 </nav>
 <a href="#ft-open" class="book-button">
