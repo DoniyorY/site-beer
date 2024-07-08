@@ -208,9 +208,107 @@ return [
         'en' => 'Brewery',
         'uz' => "bizning pivo navlarimiz",
     ],
-    '' => [
-        'ru' => '',
-        'en' => '',
+    'Beer Restaurant Menu' => [
+        'ru' => 'Меню пивного ресторана',
+        'en' => 'Beer Restaurant Menu',
+        'uz' => '',
+    ],
+    'menu_breadcrumbs_title' => [
+        'ru' => '
+        <h3 style="color: white;"><span class="yellow">Кулинарное путешествие</span> с крафтовым пивом</h3>
+        ',
+        'en' => '
+        <h3 style="color: white;"><span class="yellow">A Culinary Journey</span> with Craft Brews</h3>
+        ',
+        'uz' => '',
+    ],
+    'Host Your Gathering at Our Brewery' => [
+        'ru' => 'Проведите свое мероприятие в нашей пивоварне',
+        'en' => 'Host Your Gathering at Our Brewery',
+        'uz' => '',
+    ],
+    'Host Your Gathering' => [
+        'ru' => 'Проведите свой праздник',
+        'en' => 'Host Your Gathering',
+        'uz' => '',
+    ],
+    'At Our Brewery' => [
+        'ru' => 'в нашей пивоварне',
+        'en' => 'At Our Brewery',
+        'uz' => '',
+    ],
+    'events_content1' => [
+        'ru' => 'Ищете идеальное место для проведения вашего следующего коллективного мероприятия? Наша пивоварня предлагает уникальную и привлекательную атмосферу для встреч любого рода. Планируете ли вы корпоративную встречу, семейное воссоединение, празднование дня рождения или просто посиделки с друзьями - у нас есть все необходимое, чтобы сделать ваше мероприятие незабываемым.',
+        'en' => 'Looking for the perfect venue to host your next group event? Our brewery offers a unique and
+                        inviting atmosphere for gatherings of all kinds. Whether you’re planning a corporate outing, a
+                        family reunion, a birthday celebration, or a casual get-together with friends, we have
+                        everything you need to make your event memorable.',
+        'uz' => '',
+    ],
+    'events_title_2' => [
+        'ru' => '
+                    <h2>Почему вы должны выбрать <span style="color: #CD8A33">нашу пивоварню</span> для своего мероприятия?</h2>
+       ',
+        'en' => '
+            <h2>Why Choose <span style="color: #CD8A33">Our Brewery</span> For Your Event</h2>
+        ',
+        'uz' => '',
+    ],
+    'Spacious and Versatile Venue' => [
+        'ru' => 'Просторное и универсальное место',
+        'en' => 'Spacious and Versatile Venue',
+        'uz' => '',
+    ],
+    'events_content2' => [
+        'ru' => 'Наша пивоварня отличается просторным помещением, в котором могут разместиться как маленькие, так и большие группы. Благодаря гибкой рассадке и большому количеству мест для общения ваши гости будут чувствовать себя комфортно и расслабленно.',
+        'en' => 'Looking for the perfect venue to host your next group event? Our brewery offers a unique and
+                        inviting atmosphere for gatherings of all kinds. Whether you’re planning a corporate outing, a
+                        family reunion, a birthday celebration, or a casual get-together with friends, we have
+                        everything you need to make your event memorable.',
+        'uz' => '',
+    ],
+    'Craft Beer Selection' => [
+        'ru' => 'Выбор крафтового пива',
+        'en' => 'Craft Beer Selection',
+        'uz' => '',
+    ],
+    'Craft Beer Selection Content' => [
+        'ru' => 'Порадуйте своих гостей исключительным выбором крафтового пива, сваренного на месте. От классических сортов пива до инновационных сортов эля - наш разнообразный ассортимент удовлетворит любой вкус. Мы также предлагаем дегустации и экскурсии по пивоварне, чтобы расширить возможности вашего мероприятия.',
+        'en' => 'Treat your guests to an exceptional selection of craft beers brewed on-site. From classic lagers
+                        to innovative ales, our diverse range of beers caters to all tastes. We also offer tasting
+                        sessions and brewery tours to enhance your event experience.',
+        'uz' => '',
+    ],
+    'Delicious Food Options' => [
+        'ru' => 'Вкусные блюда',
+        'en' => 'DELICIOUS FOOD OPTIONS',
+        'uz' => '',
+    ],
+    'Delicious Food Options Content' => [
+        'ru' => 'Сочетайте наше исключительное пиво с разнообразными вкусными блюдами нашей кухни. В нашем меню есть закуски, основные блюда и десерты - все они созданы, чтобы дополнить наши пива. Мы предлагаем индивидуальные пакеты услуг кейтеринга в соответствии с потребностями вашего мероприятия.',
+        'en' => 'Pair our exceptional beers with a variety of delicious food options from our kitchen. Our menu includes appetizers, main courses, and desserts, all crafted to complement our brews. Customizable catering packages are available to suit your event’s needs.',
+        'uz' => '',
+    ],
+    'Dedicated Event Planning' => [
+        'ru' => 'Специальное планирование мероприятий',
+        'en' => 'Dedicated Event Planning',
+        'uz' => '',
+    ],
+    'Dedicated Event Planning Content' => [
+        'ru' => 'Наша опытная команда по планированию мероприятий готова помочь вам на каждом шагу. Мы будем работать с вами, чтобы каждая деталь была идеальной, начиная с первоначального планирования и заканчивая исполнением. Мы предлагаем индивидуальные пакеты услуг и можем учесть особые пожелания, чтобы сделать ваше мероприятие по-настоящему уникальным.',
+        'en' => 'Our experienced event planning team is here to assist you every step of the way. From initial planning
+                to execution, we’ll work with you to ensure every detail is perfect. We offer customizable event
+                packages and can accommodate special requests to make your event truly unique.',
+        'uz' => '',
+    ],
+    'Unique Ambiance' => [
+        'ru' => 'Уникальная атмосфера',
+        'en' => 'Unique Ambiance',
+        'uz' => '',
+    ],
+    'Unique Ambiance Content' => [
+        'ru' => 'Наша пивоварня станет отличным фоном для вашего мероприятия, сочетая деревенский шарм с современными удобствами. Ваши гости будут наслаждаться теплой и гостеприимной атмосферой, что сделает праздник незабываемым.',
+        'en' => 'Our brewery provides a distinctive backdrop for your event, combining rustic charm with modern amenities. Your guests will enjoy the warm and welcoming atmosphere, making it a celebration to remember.',
         'uz' => '',
     ],
     '' => [
@@ -238,7 +336,7 @@ return [
         'en' => '',
         'uz' => '',
     ],
-    '' => [
+'' => [
         'ru' => '',
         'en' => '',
         'uz' => '',
@@ -263,7 +361,7 @@ return [
         'en' => '',
         'uz' => '',
     ],
-    '' => [
+'' => [
         'ru' => '',
         'en' => '',
         'uz' => '',
@@ -288,12 +386,207 @@ return [
         'en' => '',
         'uz' => '',
     ],
+'' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
     '' => [
         'ru' => '',
         'en' => '',
         'uz' => '',
     ],
     '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+'' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+'' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+'' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+'' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+'' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+'' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+'' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+    '' => [
+        'ru' => '',
+        'en' => '',
+        'uz' => '',
+    ],
+'' => [
         'ru' => '',
         'en' => '',
         'uz' => '',

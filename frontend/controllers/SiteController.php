@@ -61,7 +61,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-       // $this->findAge();
+        // $this->findAge();
         return $this->render('index');
     }
 
@@ -86,19 +86,19 @@ class SiteController extends Controller
 
     public function actionMenu()
     {
-       // $this->findAge();
+        // $this->findAge();
         return $this->render('menu');
     }
 
     public function actionBeers()
     {
-       // $this->findAge();
+        // $this->findAge();
         return $this->render('beers');
     }
 
     public function actionEvents()
     {
-       // $this->findAge();
+        // $this->findAge();
         return $this->render('events');
     }
 
@@ -164,7 +164,8 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-    protected function findAge(){
+    protected function findAge()
+    {
         if (!Yii::$app->session->get('age_verified', false)) {
             return $this->redirect(['verification']);
         }

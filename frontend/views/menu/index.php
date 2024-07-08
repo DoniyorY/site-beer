@@ -1,18 +1,17 @@
 <?php
-$this->title = 'Beer Restaurant Menu';
-$baseUrl = Yii::$app->request->baseUrl;
 $lang = Yii::$app->language;
+$this->title = Yii::$app->params['Beer Restaurant Menu'][$lang];
+$baseUrl = Yii::$app->request->baseUrl;
 
 use common\models\Connector;
-use yii\helpers\Url;
-use yii\helpers\Html;
+
 
 ?>
 <section class="intro menu-breadcrumbs">
     <div style="background-image: url('<?= "$baseUrl/images/menu-breadcrumbs.png" ?>'); height: 60vh; opacity: .6"></div>
     <div class="title">
         <h1><?= $this->title ?></h1>
-        <h3 style="color: white;"><span class="yellow">A Culinary Journey</span> with Craft Brews</h3>
+        <?=Yii::$app->params['menu_breadcrumbs_title'][$lang]?>
     </div>
 </section>
 <section class="main-menu">
