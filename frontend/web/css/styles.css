@@ -745,7 +745,7 @@ nav.navigation.main .make-reservation span {
     display: block;
     background: #FFB200;
     transition: all 0.3s ease;
-    position: fixed;
+    position: absolute;
     right: 25px;
     top: 25px;
     z-index: 400;
@@ -1410,7 +1410,9 @@ section.locations nav a img {
     }
 
     .products .container .block img {
-        display: none
+        display: block;
+        object-fit: cover;
+        width: 100%;
     }
 
     .products .container .block .inner {

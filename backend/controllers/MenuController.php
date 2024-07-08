@@ -44,7 +44,7 @@ class MenuController extends Controller
     {
         $searchModel = new MenuSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
-        $dataProvider->query->orderBy(['id' => SORT_DESC]);
+        $dataProvider->query->orderBy(['id' => SORT_ASC]);
         if ($this->request->isPost) $this->actionCreate();
         return $this->render('index', [
             'searchModel' => $searchModel,
