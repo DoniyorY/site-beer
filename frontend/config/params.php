@@ -378,11 +378,11 @@ Hop ta'mi va hidining his etilishi: yuqoridan juda yuqorigacha, keng ko'lamli xu
         'ru' => 'Воспринимаемый аромат и вкус солода: Ярко выраженный солодовый аромат и вкус. Может присутствовать небольшое количество сернистых ароматов и привкусов, создаваемых дрожжами. Солодовый характер иногда хлебный, напоминающий слегка поджаренный ячменный солод. Карамельного характера быть не должно.
 Воспринимаемый хмелевой аромат и вкус: Хмелевой аромат варьируется от отсутствующего до слабого. Хмелевой вкус варьируется от очень слабого до слабого, создаваемого хмелем благородных сортов.',
         'en' => 'Perceived Malt Aroma and Flavor: Pronounced malt aroma and flavor. There may be a small
-                                amount of sulfuric aromas and flavors created by the yeast. The malt character is
-                                sometimes bready, reminiscent of slightly toasted malted barley. There should be no
-                                caramel character.
-                                Perceived Hop Aroma and Flavor: Hop aroma ranges from absent to weak. Hop flavor ranges
-                                from very weak to weak, created by noble-type hops.',
+                 amount of sulfuric aromas and flavors created by the yeast. The malt character is
+                 sometimes bready, reminiscent of slightly toasted malted barley. There should be no
+                 caramel character.
+                 Perceived Hop Aroma and Flavor: Hop aroma ranges from absent to weak. Hop flavor ranges
+                 from very weak to weak, created by noble-type hops.',
         'uz' => "Malt ta'mi va hidining his etilishi: aniq malt hidi va ta'mi seziladi. Xamirturush tomonidan ishlab chiqarilgan kichik miqdordagi oltingugurtli aromatlar va ta'mlar mavjud bo'lishi mumkin. Malt xarakteri ba'zan nonli bo'lib, yengil qovurilgan arpa maltini eslatadi. Karamel xarakteri bo'lmasligi kerak.
 Hop ta'mi va hidining his etilishi: hop hidi umuman yo'qdan pastgacha bo'lib, oliy hop navlari tomonidan ishlab chiqariladi.",
     ],

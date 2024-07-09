@@ -23,7 +23,7 @@ use common\models\Connector;
                 <li class="nav-item item" role="presentation">
                     <button class="nav-link <?= ($i == 0) ? 'active' : '' ?>" id="<?= $item->id ?>-tab"
                             data-bs-toggle="pill" data-bs-target="#<?= $item->id ?>" type="button" role="tab"
-                            aria-controls="<?= $item->id ?>" aria-selected="true"><?= $item->{"name_en"} ?></button>
+                            aria-controls="<?= $item->id ?>" aria-selected="true"><?= $item->{"name_$lang"} ?></button>
                 </li>
                 <?php $i++; endforeach; ?>
         </ul>
@@ -40,7 +40,7 @@ use common\models\Connector;
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="menu-item-title">
-                                            <h2><?= $m->{"title_en"} ?></h2>
+                                            <h2><?= $m->{"title_$lang"} ?></h2>
                                         </div>
                                     </div>
                                     <div class="col-md-3 text-end d-none d-md-block">
@@ -60,7 +60,7 @@ use common\models\Connector;
                                         <div class="row">
                                             <div class="col-12 col-md-6">
                                                 <p>
-                                                    <?= $m->{"desc_en"} ?>
+                                                    <?= $m->{"desc_$lang"} ?>
                                                 </p>
                                             </div>
                                             <?php
@@ -68,7 +68,7 @@ use common\models\Connector;
                                                 <div class="col-md-6 d-none d-md-block"></div>
                                                 <div class="col-6 text-center menu-addition">
                                                     <?php foreach ($addtional as $add): ?>
-                                                        <p><?= $add->{"name_en"} ?> <span style="font-size: 24px;">(<?=$add->weight?>g)</span></p>
+                                                        <p><?= $add->{"name_$lang"} ?> <span style="font-size: 24px;">(<?=$add->weight?>g)</span></p>
                                                     <?php endforeach; ?>
                                                 </div>
                                                 <div class="col-md-3 d-none d-md-block"></div>
@@ -102,7 +102,7 @@ use common\models\Connector;
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="menu-item-title">
-                                            <h2><?= $m->{"title_en"} ?></h2>
+                                            <h2><?= $m->{"title_$lang"} ?></h2>
                                         </div>
                                     </div>
                                     <div class="col-md-3 text-end d-none d-md-block">
@@ -123,7 +123,7 @@ use common\models\Connector;
                                     </div>
                                     <div class="col-md-6">
                                         <p>
-                                            <?= $m->{"desc_en"} ?>
+                                            <?= $m->{"desc_$lang"} ?>
                                         </p>
                                     </div>
                                     <div class="col-md-3 col-12 text-end d-block d-md-none">
