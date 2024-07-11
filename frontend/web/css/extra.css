@@ -401,7 +401,26 @@ li.nav-item button.active {
 .footer-schedule p {
     margin-bottom: 0;
 }
-
+.owl-stage-outer{
+    width: 90%;
+    margin-left: 65px;
+    z-index: 1;
+}
+.owl-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    z-index: 0;
+}
+.owl-nav .owl-prev{
+    margin-right: 10px;
+}
+.owl-stage .owl-item{
+    width: 310px;
+    margin-right: 20px;
+}
 @media (max-width: 568px) {
     .navigation #brand img {
         width: 230px;

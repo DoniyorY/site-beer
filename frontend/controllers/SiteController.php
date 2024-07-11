@@ -80,7 +80,7 @@ class SiteController extends Controller
             Yii::$app->session->set('age_verified', 1);
         } else {
             return $this->redirect('https://google.com');
-        }
+        } 
         return $this->redirect(Yii::$app->request->referrer);
     }
 

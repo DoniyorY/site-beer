@@ -20,21 +20,25 @@ $(document).ready(function(){
     })
 
     menu_owl.owlCarousel({
-        loop:false,
+        loop:true,
         margin:10,
-        nav:false,
+
 
         responsive:{
             0:{
                 items:2,
                 autoplay:true,
+                nav:false,
             },
             600:{
-                items:1
+                items:1,
+                nav:false,
             },
             1000:{
                 items:4,
                 autoplay:false,
+                navText:['<img src="/images/owl-left.png" alt="">','<img src="/images/owl-right.png" alt="">'],
+                nav:true,
             }
         }
     })

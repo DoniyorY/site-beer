@@ -63,8 +63,7 @@ use common\models\Connector;
                                                     <?= $m->{"desc_$lang"} ?>
                                                 </p>
                                             </div>
-                                            <?php
-                                            if ($addtional): ?>
+                                            <?php if ($addtional): ?>
                                                 <div class="col-md-6 d-none d-md-block"></div>
                                                 <div class="col-6 text-center menu-addition">
                                                     <?php foreach ($addtional as $add): ?>
