@@ -194,7 +194,7 @@ return [
                         tenderness of the lamb combined with the richness of the cream sauce will delight even the most
                         discerning palates. Slowly braised until tender, the lamb shank is generously drenched in a
                         fragrant cream sauce, promising a burst of flavors and unforgettable gastronomic experiences.',
-        'uz' => "Bizning qaymoqli sousdagi qo'zichoq go'shti haqiqiy gurmelar uchun yaratilgan oshpazlik asaridir. Qo'zichoq go'shtining nozikligi qaymoqli sousning boyligi bilan birlashtirilib, hatto eng talabchan tanglayni ham xursand qiladi. Sekin-asta qaynatilguncha qaynatilgan qo'zichoq go'shti boy, qaymoqli sousga qo'shib, ajoyib ta'm va unutilmas ovqatlanish tajribasini va'da qiladi.",
+        'uz' => "Bizning qaymoqli sousdagi qo'zichoq go'shti haqiqiy gurmelar uchun yaratilgan oshpazlik asaridir. Qo'zichoq go'shtining nozikligi qaymoqli sousning boyligi bilan birlashtirilib, hatto eng talabchan tang`layni ham xursand qiladi. Sekin-asta qaynatilguncha qaynatilgan qo'zichoq go'shti boy, qaymoqli sousga qo'shib, ajoyib ta'm va unutilmas ovqatlanish tajribasini va'da qiladi.",
     ],
     'Find Out more about our menu' => [
         'ru' => 'узнайте больше о нашем меню',
