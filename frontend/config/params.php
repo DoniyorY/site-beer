@@ -186,7 +186,7 @@ return [
     'Lamb Shank in Cream Sauce' => [
         'ru' => 'Голень ягненка в сливочном соусе',
         'en' => 'Lamb Shank in Cream Sauce',
-        'uz' => "QAYMOQLI sousdagi qo'zicjoq go'shti",
+        'uz' => "Qaymoqli sousdagi qo'zichoq go'shti",
     ],
     'restaurant_content' => [
         'ru' => 'Наша фирменная голень ягненка в сливочном соусе - это кулинарный шедевр, созданный для истинных гурманов. Нежность ягненка в сочетании с богатством сливочного соуса порадует даже самые взыскательные вкусы. Медленно тушеная до готовности, голень ягненка щедро поливается ароматным сливочным соусом, обещая взрыв вкусов и незабываемые гастрономические впечатления.',
@@ -256,7 +256,7 @@ return [
             <h2>Why Choose <span style="color: #CD8A33">Our Brewery</span> For Your Event</h2>
         ',
         'uz' => '
-         <h2>Nima SABABDAN<span style="color: #CD8A33">tadbiringiz uchun</span>bizning RESTOBARni tanlashingiz kerak?</h2>
+         <h2>Nima SABABDAN <span style="color: #CD8A33">tadbiringiz uchun </span>bizning RESTOBARni tanlashingiz kerak?</h2>
          ',
     ],
     'Spacious and Versatile Venue' => [
